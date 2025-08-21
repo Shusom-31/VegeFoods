@@ -20,7 +20,7 @@ A modern and responsive **Shopping Cart Website** for fruits and vegetables buil
 ## 📷 Screenshots
 
 ### Home Page
-![Home](Website screenshoot/home.png)
+![Home]([Website screenshoot/home.png](https://github.com/Shusom-31/VegeFoods-/blob/742ea8bc068e3c5465b66c9a16f68e1eea43175c/Website%20screenshoot/home.png))
 
 ### Product List
 ![Products](Website screenshoot/product.png)
