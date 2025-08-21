@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+<nav class="bg-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="#" class="text-2xl font-bold text-green-600">VegeFoods</a>
+      </div>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="#home" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+        <a href="#products" class="text-gray-700 hover:text-green-600 font-medium">Products</a>
+        <a href="#" class="text-gray-700 hover:text-green-600 font-medium">Login</a>
+        <button id="cartBtn" class="relative text-gray-700 hover:text-green-600 font-medium">
+          🛒 Cart
+          <span id="cart-count" class="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">0</span>
+        </button>
+      </div>
+      <div class="md:hidden flex items-center">
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-600">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <!-- Home Section -->
+  <section class="home flex items-center justify-between p-10" id="home">
+    <!-- Left Text -->
+    <div class="max-w-lg">
+      <h1 class="text-4xl font-bold text-green-700">Fresh & Organic</h1>
+      <p class="mt-3 text-gray-600 text-lg">
+        Get the best quality fruits and vegetables directly from farms. 
+        Stay healthy and eat fresh every day!
+      </p>
+      <a href="#products" class="bg-green-600 text-white px-6 py-3 mt-5 inline-block rounded-lg shadow hover:bg-green-700">Shop Now</a>
+    </div>
+    <!-- Right Image -->
+    <div class="w-1/2 text-center">
+      <img src="h.png" 
+           alt="Juice" class="w-full max-w-md mx-auto transform transition duration-700 ease-in-out hover:scale-105">
+    </div>
+  </section>
+  <!-- Product List -->
+<section class="pt-28 px-6" id="products">
+  <h2 class="text-3xl font-bold text-center mb-8 text-green-600">Our Products</h2>
+  <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Product Cards injected here via JS -->
+  </div>
+</section>
+
+  </section>
+  <!-- Reviews Section -->
+  <section class="bg-gray-100 py-12">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-green-600 mb-8">What Our Customers Say</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <p class="text-gray-600 mb-4">"Fresh Apples are amazing, very crispy!"</p>
+        <h4 class="font-bold">- Naimur Rahman</h4>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <p class="text-gray-600 mb-4">"Organic Carrots taste so fresh and healthy."</p>
+        <h4 class="font-bold">- Sarah Saba</h4>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <p class="text-gray-600 mb-4">"I love the quick delivery and fresh products."</p>
+        <h4 class="font-bold">- Nirob Ahmed</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+
+<footer class="bg-green-600 text-white py-6 mt-12 text-center">
+  <p>&copy; 2025 VegeFoods. All rights reserved.</p>
+  <div class="flex justify-center space-x-4 mt-2">
+    <a href="#" class="hover:text-gray-300">Facebook</a>
+    <a href="#" class="hover:text-gray-300">Instagram</a>
+    <a href="#" class="hover:text-gray-300">Twitter</a>
+  </div>
+</footer>
+
+ 
+
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="fixed top-0 right-0 w-96 h-full bg-white shadow-lg p-6 transform translate-x-full transition-transform duration-300 z-50 flex flex-col">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Your Cart</h2>
+      <button id="close-cart" class="text-gray-600 text-lg">✖</button>
+    </div>
+    <ul id="cart-items" class="space-y-3 flex-1 overflow-y-auto"></ul>
+    <div class="mt-4 border-t pt-4">
+      <p class="font-semibold">Total: $<span id="cart-total">0</span></p>
+      <button id="checkout-btn" class="w-full bg-green-600 text-white py-3 mt-4 rounded-lg shadow hover:bg-green-700">
+        Proceed to Payment 💳
+      </button>
+      <button id="clear-cart" class="w-full bg-red-500 text-white py-2 mt-2 rounded-lg hover:bg-red-600">
+        Clear Cart
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
