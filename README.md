@@ -17,5 +17,17 @@ A modern and responsive **Shopping Cart Website** for fruits and vegetables buil
 
 ---
 
+## 📷 Screenshots
 
+### Home Page
+![Home](Website screenshoot/home.png)
+
+### Product List
+![Products](Website screenshoot/product.png)
+
+### Shopping Cart
+![Cart](Website screenshoot/cart.png)
+
+### Customer Reviews
+![Reviews](Website screenshoot/review.png)
 
