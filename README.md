@@ -28,6 +28,9 @@ A modern and responsive **Shopping Cart Website** for fruits and vegetables buil
 ### Shopping Cart
 ![Cart](https://github.com/Shusom-31/VegeFoods-/blob/5df571c62cf2f27393ff1e0c9b5e7e86ac74820c/Website%20screenshoot/cart.png)
 
+### Discount Promo code
+![Promo](https://github.com/Shusom-31/VegeFoods/blob/18a4bbca791dbdf8b7d706f6885077304967c70c/Website%20screenshoot/promo.png)
+
 ### Customer Reviews
 ![Reviews](https://github.com/Shusom-31/VegeFoods-/blob/5df571c62cf2f27393ff1e0c9b5e7e86ac74820c/Website%20screenshoot/review.png)
 
